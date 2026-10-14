@@ -11,9 +11,6 @@ them only in chat/memory, so they travel with the repo.
 - **Findings report formats.** The report is plain text. A CSV bundle or an HTML version with the lists as
   tables would be easier to hand to someone else.
 
-- **Rename the folder.** The script is now `Microsoft365AdminToolkit.ps1`, but the `O365UserProvisioning`
-  folder keeps the old name so existing shortcuts and open editor sessions don't break. A rename is a folder
-  move plus a README edit.
 - **Audit Tenant: connector actions.** The connectors check is read-only. Disabling or removing a connector
   (`Set-InboundConnector -Enabled` / `Remove-InboundConnector`, and the outbound equivalents) from the list
   would close the loop for an incident, behind a confirmation dialog.
@@ -55,6 +52,8 @@ them only in chat/memory, so they travel with the repo.
 
 ## Done
 
+- **Rename to match the app** (2026-10-14). Script is `Microsoft365AdminToolkit.ps1` (was `New-O365User.ps1`)
+  and the folder is `Microsoft365AdminToolkit` (was `O365UserProvisioning`).
 - **Click-to-sort columns** (2026-10-14). Every list (sign-ins, audit log, devices, inbox rules, forwarding,
   message trace, admins, MFA report, connectors, forwarding use, inbox scan, SPF/DMARC) sorts ascending/descending
   by clicking a column header, numeric/date/text aware, via the shared `New-ListView`. Also dropped the

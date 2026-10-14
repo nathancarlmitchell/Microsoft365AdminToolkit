@@ -4,9 +4,6 @@ A WinForms GUI, run from PowerShell, for administering a Microsoft 365 / Entra I
 and offboarding users, investigating a suspected compromise, and auditing and hardening the tenant.
 It has four tabs: **New User**, **Offboard User**, **Audit User** and **Audit Tenant**.
 
-> The script is `Microsoft365AdminToolkit.ps1`. The folder (`O365UserProvisioning`) still carries the old
-> name so existing shortcuts and open editor sessions keep working; rename it whenever convenient.
-
 ## New User tab
 
 - First/last name entry, with **Display Name** and **email/UPN auto-suggested** from the tenant's
